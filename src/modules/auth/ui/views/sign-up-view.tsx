@@ -50,10 +50,10 @@ export const SignUpView = () => {
         },
     });
 
-    const onSubmit = (data: z.infer<typeof formSchema>)=>{
+    const onSubmit = async (data: z.infer<typeof formSchema>)=>{
         setError(null);
 
-     authClient.signUp.email({
+     await authClient.signUp.email({
             name: data.name,
             email: data.email,
             password: data.password,
