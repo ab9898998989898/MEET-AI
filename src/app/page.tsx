@@ -79,7 +79,7 @@ export default function page() {
       onChange={(e) => setPassword(e.target.value)}
       type="password"
       />
-      <Button type="submit" onClick={onSubmit}>{isLoading ? <Loader className="animate-spin" /> : "Sign Up"}</Button>
+      <Button variant="custom" type="submit" onClick={onSubmit}>{isLoading ? <Loader className="animate-spin" /> : "Sign Up"}</Button>
     </div>
     <div className="flex flex-col gap-y-4 p-4 items-center justify-center">
       <Input 
