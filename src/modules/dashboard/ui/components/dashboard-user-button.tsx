@@ -56,7 +56,7 @@ export const DashboardUserButton = () => {
                     <DropdownMenuLabel>
                         <div className="flex flex-col gap-1">
                             <span className="font-medium truncate">{data.user.name}</span>
-                            <span className="text-xm font-normal text-muted-foreground truncate">{data.user.email}</span>
+                            <span className="text-xs font-normal text-muted-foreground truncate">{data.user.email}</span>
                         </div>
                     </DropdownMenuLabel>
                     <DropdownMenuSeparator />
