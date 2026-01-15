@@ -51,7 +51,7 @@ export const DashboardSidebar = () => {
           <p className="font-semibold text-2xl">AB.AI</p>
         </Link>
       </SidebarHeader>
-      <div className="px- py-2">
+      <div className="px-2 py-2">
         <Separator className="opacity-10 text-[#5D6B68]" />
       </div>
       <SidebarContent>
