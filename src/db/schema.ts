@@ -84,7 +84,7 @@ export const agents = pgTable("agents",{
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at")
     .$onUpdate(() => /* @__PURE__ */ new Date())
-    .notNull(),
+    .notNull().defaultNow(),
 })
 
 export const userRelations = relations(user, ({ many }) => ({
