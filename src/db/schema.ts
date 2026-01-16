@@ -79,7 +79,7 @@ export const verification = pgTable(
 export const agents = pgTable("agents",{
   id:text("id").primaryKey().$default(()=>nanoid()),
   name:text("name").notNull(),
-  useId: text("user_id").notNull().references(() => user.id, { onDelete: "cascade" }),
+  userId: text("user_id").notNull().references(() => user.id, { onDelete: "cascade" }),
   instructions: text("instructions").notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at")
